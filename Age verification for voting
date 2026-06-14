@@ -1,0 +1,9 @@
+echo "age verification for voting"
+read age
+if [ $age -ge 18 ]
+then
+echo "adult"
+else
+echo "minor"
+fi
+echo "thankyou"
