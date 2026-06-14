@@ -1,0 +1,9 @@
+echo "enter your name"
+read name
+if ["$name" = "bhumika"]
+then
+echo "welcome bhumika"
+else
+echo "you are not Bhumika "
+fi
+echo "program ended"
