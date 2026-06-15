@@ -1,0 +1,15 @@
+echo "enter your marks"
+read marks
+if  [ $marks -ge 90 ]
+then
+echo "grade A"
+elif [ $marks -ge 75 ]
+then
+echo "grade B"
+elif [ $marks -ge 60 ]
+then
+echo "grade c "
+else
+echo "grade d"
+fi
+echo "Result Declared"
