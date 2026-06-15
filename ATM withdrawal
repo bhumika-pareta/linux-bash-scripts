@@ -1,0 +1,13 @@
+echo "enter you amount for withdrawal "
+read amount
+if [ $amount -le 5000 ]
+then
+echo "Transaction Successful"
+elif [ $amount -ge  5000 ] && [ $amount -le  20000 ]
+then
+echo "further verification required"
+elif [ $amount -ge 20000 ]
+then
+echo "Transacton Failed"
+fi
+echo "thankyou"
