@@ -1,0 +1,25 @@
+#!/bin/bash
+
+echo "Choose a language : "
+echo "1. Java"
+echo "2. Bash"
+echo "3. Linux"
+
+read choice
+
+case $choice in
+1)
+     echo "You selected java"
+;;
+2)
+     echo "You selected bash"
+;;
+3)
+     echo "You selected linux"
+;;
+*)
+     echo "Invalid input"
+;;
+esac
+
+
