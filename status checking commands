@@ -1,0 +1,7 @@
+ls bbbv.txt
+if [ $? -eq 0
+ ]; then
+echo "file exists"
+else
+echo "file not  exists"
+fi
