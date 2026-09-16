@@ -1,0 +1,40 @@
+#!/bin/bash
+
+
+echo "=================================="
+echo "     SYSTEM HEALTH MONITOR"
+echo "=================================="
+
+
+user=$(whoami)
+directory=$(pwd)
+disk=$(df -h / | awk 'NR==2 {print $5}')
+disk_number=${disk%\%}
+memory=$(free -m | awk 'NR==2 {print $3}')
+os=$(uname -s)
+kernel=$(uname -r)
+
+
+echo "1. Show user"
+echo "2. Show directory"
+echo "3. Show disk usage"
+echo "4. Show Memory usage"
+echo "5. Show System Information"
+echo "6. Exit"
+
+
+echo "Enter your choice"
+read choice
+
+
+
+case $choice in
+1)
+echo "User: $user"
+;;
+2)
+echo "Directory: $directory"
+;;
+                             [ Read 73 lines ]
+^G Help        ^O Write Out   ^F Where Is    ^K Cut         ^T Execute
+^X Exit        ^
